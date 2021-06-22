@@ -1,0 +1,43 @@
+#伤害文本会在多久之后消失? 20Tick=1s
+RunTick: "20"
+
+Rand:
+  #最大偏移量
+  RandMax: "0.5"
+  #最小偏移量
+  RandMin: "-0.5"
+  #文本上浮速度
+  TextRise: "0.1"
+
+DamagType:
+  #序号的最大长度
+  DamageList: "6"
+
+  #排序名字,可以自由添加.但必须为"Damage+排序序号"
+  Damage1:
+    #AP中的属性名称
+    DamageName: "基准伤害"
+    #读取APE造成伤害时赋予伤害量的属性
+    DamageValue: "基准伤害全息值"
+    #显示在伤害数字前的文本
+    DamageText: "&7基准 "
+  Damage2:
+    DamageName: "火元素伤害"
+    DamageValue: "火元素伤害全息值"
+    DamageText: "&c火 "
+  Damage3:
+    DamageName: "水元素伤害"
+    DamageValue: "水元素伤害全息值"
+    DamageText: "&b水 "
+  Damage4:
+    DamageName: "风元素伤害"
+    DamageValue: "风元素伤害全息值"
+    DamageText: "&f风 "
+  Damage5:
+    DamageName: "毒元素伤害"
+    DamageValue: "毒元素伤害全息值"
+    DamageText: "&2毒 "
+  Damage6:
+    DamageName: "电元素伤害"
+    DamageValue: "电元素伤害全息值"
+    DamageText: "&e电 "

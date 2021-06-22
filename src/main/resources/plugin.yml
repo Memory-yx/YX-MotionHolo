@@ -1,0 +1,15 @@
+name: YX-MotionHolo
+version: 1.0.1
+main: memory520.motionholo.MotionHolo
+api-version: 1.15
+depend:
+  - AttributePlus
+  - HolographicDisplays
+
+commands:
+  reload:
+    description: 重载插件
+
+permissions:
+  MotionHolo.admin:
+    default: op
