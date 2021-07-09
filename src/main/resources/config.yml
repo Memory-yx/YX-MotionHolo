@@ -1,43 +1,37 @@
 #伤害文本会在多久之后消失? 20Tick=1s
-RunTick: "20"
+RunTick: '20'
 
 Rand:
   #最大偏移量
-  RandMax: "0.5"
+  RandMax: '0.5'
   #最小偏移量
-  RandMin: "-0.5"
+  RandMin: '-0.5'
   #文本上浮速度
-  TextRise: "0.1"
+  TextRise: '0.1'
+
+#暴击时显示的文字
+CritText: '&e&l&n&oCrit!&r '
+#暴击时的音效
+CritSound: 'ENTITY_IRON_GOLEM_DAMAGE'
+#生命恢复时显示的文字
+RegainHealthText: '&f&l&o'
+#生命减少时显示的文字
+LoseHealthText: '&f&l&o&d&l&o-'
 
 DamagType:
-  #序号的最大长度
-  DamageList: "6"
-
-  #排序名字,可以自由添加.但必须为"Damage+排序序号"
+  #排序名字,可以自由添加.
   Damage1:
     #AP中的属性名称
-    DamageName: "基准伤害"
+    DamageName: '本位伤害'
     #读取APE造成伤害时赋予伤害量的属性
-    DamageValue: "基准伤害全息值"
+    DamageValue: '本位伤害全息值'
     #显示在伤害数字前的文本
-    DamageText: "&7基准 "
+    DamageText: '&9&l&o'
   Damage2:
-    DamageName: "火元素伤害"
-    DamageValue: "火元素伤害全息值"
-    DamageText: "&c火 "
+    DamageName: '变动伤害'
+    DamageValue: '变动伤害全息值'
+    DamageText: '&a&l&o'
   Damage3:
-    DamageName: "水元素伤害"
-    DamageValue: "水元素伤害全息值"
-    DamageText: "&b水 "
-  Damage4:
-    DamageName: "风元素伤害"
-    DamageValue: "风元素伤害全息值"
-    DamageText: "&f风 "
-  Damage5:
-    DamageName: "毒元素伤害"
-    DamageValue: "毒元素伤害全息值"
-    DamageText: "&2毒 "
-  Damage6:
-    DamageName: "电元素伤害"
-    DamageValue: "电元素伤害全息值"
-    DamageText: "&e电 "
+    DamageName: '固定伤害'
+    DamageValue: '固定伤害全息值'
+    DamageText: '&c&l&o'
